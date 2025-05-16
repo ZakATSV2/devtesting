@@ -12,6 +12,9 @@ Y8ooooo. 88    88 88'  `88 88ooood8
 
 
 made with 💓 by sellessence
+Uploaded by Yarrosvault (or Freedom, idk) on Sirius Scripting server
+Edited by SK
+Syde Main repo: https://github.com/yarrosvault/syde (Recommended UI Btw)
 ]]
 
 local inputservice =	game:GetService("InsertService")
@@ -793,10 +796,13 @@ do
 
 		end
 
+        --- Added custom checks, we added 2 more seconds, just in case VIA Auth and LD response delays for some stupid reason-- SK
 		local function load()
-			TweenWorkLabel(1,'rbxassetid://136002400178503', 'Securing UI...')
-			TweenWorkLabel(1,'rbxassetid://126745165401124', 'Loading Files..')
-			TweenWorkLabel(1,'rbxassetid://108012241529487', 'Checking For Discord...')
+			TweenWorkLabel(1,'rbxassetid://136002400178503', 'Securing Functions...')
+            TweenWorkLabel(1,'rbxassetid://136002400178503', 'Checking Host Status...')
+            TweenWorkLabel(3,'rbxassetid://136002400178503', 'Checking LD...')
+			TweenWorkLabel(1,'rbxassetid://126745165401124', 'Loading Functions..')
+			TweenWorkLabel(3,'rbxassetid://108012241529487', 'Checking VIA Auth...')
 			TweenWorkLabel(1,'rbxassetid://136405833725573', 'Loading UI...')
 			task.wait(1)
 			tweenservice:Create( LOADER.load.Salt, TweenInfo.new(0.65, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 146,0, 25)}):Play()
