@@ -2410,7 +2410,7 @@ do
 		Content = 'Enable Streamer Mode to hide your user info ONLY showed on the script, in case that you dont want to leak via Script informartion',
 		CallBack = function (state)
 			StreamerMode = state
-        end
+	        end
 	}, WINDOW.Settings.Pages.Privacy.Container)
 
 	element:Paragraph({
