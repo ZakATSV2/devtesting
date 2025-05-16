@@ -2405,11 +2405,12 @@ do
 	}, WINDOW.Settings.Pages.Theme.Container)
 
 
-	element:Paragraph({
+	element:Toggle({
 		Title = 'Streamer Mode',
 		Content = 'Enable Streamer Mode to hide your user info ONLY showed on the script, in case that you dont want to leak via Script informartion'
 		CallBack = function (state)
-				StreamerMode = state
+			StreamerMode = state
+        end
 	}, WINDOW.Settings.Pages.Privacy.Container)
 
 	element:Paragraph({
