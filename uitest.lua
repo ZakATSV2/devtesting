@@ -799,9 +799,9 @@ do
         --- Added custom checks, we added 2 more seconds, just in case VIA Auth and LD response delays for some stupid reason-- SK
 		local function load()
 			TweenWorkLabel(1,'rbxassetid://136002400178503', 'Securing Functions...')
-            TweenWorkLabel(1,'rbxassetid://136405833725573', 'Checking Host Status...')
-            TweenWorkLabel(3,'rbxassetid://136002400178503', 'Checking LD...')
-			TweenWorkLabel(1,'rbxassetid://126745165401124', 'Loading Functions..')
+            TweenWorkLabel(2,'rbxassetid://136405833725573', 'Checking Host Status...')
+            TweenWorkLabel(3,'rbxassetid://136405833725573', 'Checking LD...')
+			TweenWorkLabel(2,'rbxassetid://126745165401124', 'Loading Functions..')
 			TweenWorkLabel(3,'rbxassetid://136002400178503', 'Checking VIA Auth...')
 			TweenWorkLabel(1,'rbxassetid://136405833725573', 'Loading UI...')
 			task.wait(1)
