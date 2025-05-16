@@ -2413,7 +2413,22 @@ do
 
 	element:Paragraph({
 		Title = 'Status',
-		Content = 'Your Up To Date!'
+		Content = 'Script Up To Date!'
+	}, WINDOW.Settings.Pages.Info.Container)
+
+	element:Paragraph({
+		Title = 'Host Status',
+		Content = 'OK'
+	}, WINDOW.Settings.Pages.Info.Container)
+
+	element:Paragraph({
+		Title = 'LD Status',
+		Content = 'OK'
+	}, WINDOW.Settings.Pages.Info.Container)
+
+	element:Paragraph({
+		Title = 'VIA Auth Status',
+		Content = 'CONFIRMED (OK)'
 	}, WINDOW.Settings.Pages.Info.Container)
 
 	local startTime = tick()
