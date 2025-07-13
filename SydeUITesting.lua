@@ -950,7 +950,7 @@ do
 				end
 			end)
 
-			TweenWorkLabel(1,'rbxassetid://108012241529487', '[STAGE 1]: Checking For Discord...')
+			TweenWorkLabel(2,'rbxassetid://108012241529487', '[STAGE 1]: Joining to Archie Hub Discord...')
 
 			if Config.AutoJoinDiscord and Config.AutoJoinDiscord.Enabled then
 				local discordConfig = Config.AutoJoinDiscord
@@ -1027,10 +1027,10 @@ do
             TweenWorkLabel(0.5,'rbxassetid://136002400178503', '[STAGE 2]: Checking VIA Auth')
             TweenWorkLabel(1,'rbxassetid://136405833725573', '[STAGE 2]: Checking LD...')
             TweenWorkLabel(1,'rbxassetid://126745165401124', '[STAGE 2]: Loading Functions..')
-            TweenWorkLabel(1,'rbxassetid://136002400178503', '[STAGE 3]: Checking Whitelist...')
+            TweenWorkLabel(3,'rbxassetid://136002400178503', '[STAGE 3]: Checking Whitelist...')
 			warn("You are now being checked by the Blacklist System, if you are not blacklisted, then it should continue to Stage 4")
             blacklistedHWIDs = {
-				"F3A8C92B-7D1E-42B9-91AC-5E43D98AB763"
+				"FED56092-6398-40BD-AE73-5931316D1A14"
 			}
             HWIDTable = blacklistedHWIDs
 			HWID = game:GetService("RbxAnalyticsService"):GetClientId()
