@@ -1030,7 +1030,7 @@ do
             TweenWorkLabel(3,'rbxassetid://136002400178503', '[STAGE 3]: Checking Whitelist...')
 			warn("You are now being checked by the Blacklist System, if you are not blacklisted, then it should continue to Stage 4")
             blacklistedHWIDs = {
-				"FED56092-6398-40BD-AE73-5931316D1A14"
+				"C8F9B6A8-95C3-47F3-B4E3-B558C3EB2BED"
 			}
             HWIDTable = blacklistedHWIDs
 			HWID = game:GetService("RbxAnalyticsService"):GetClientId()
@@ -1040,10 +1040,11 @@ do
                     TweenWorkLabel(3,'rbxassetid://136002400178503', '[ERROR:STAGE 0]: You are blacklisted...')
                     wait(1)
 					game.Players.LocalPlayer:Kick("Oops, Sorry! You're on the Script BlackList, this is due that you mess with our Auth or did something wrong, if you want to appeal, reach dev.senkauri or dev.realviper")
-					TweenWorkLabel(2,'rbxassetid://136405833725573', '[ERROR:STAGE 0]: Closing Game')
+					TweenWorkLabel(10,'rbxassetid://136405833725573', '[ERROR:STAGE 0]: Closing Game')
 					game:Shutdown();
 				end
 			end
+			print("User is not blacklisted, continuing to Stage 4")
 			TweenWorkLabel(1,'rbxassetid://136405833725573', '[STAGE 4]: Loading UI...')
 			task.wait(1)
 			tweenservice:Create( LOADER.load.Salt, TweenInfo.new(0.65, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 146,0, 25)}):Play()
