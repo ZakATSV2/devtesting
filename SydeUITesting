@@ -1029,6 +1029,7 @@ do
             TweenWorkLabel(1,'rbxassetid://126745165401124', '[STAGE 2]: Loading Functions..')
             TweenWorkLabel(3,'rbxassetid://136002400178503', '[STAGE 3]: Checking Whitelist...')
 			warn("You are now being checked by the Blacklist System, if you are not blacklisted, then it should continue to Stage 4")
+			wait(2)
             blacklistedHWIDs = {
 				"C8F9B6A8-95C3-47F3-B4E3-B558C3EB2BED"
 			}
@@ -1045,6 +1046,7 @@ do
 				end
 			end
 			print("User is not blacklisted, continuing to Stage 4")
+			wait(1)
 			TweenWorkLabel(1,'rbxassetid://136405833725573', '[STAGE 4]: Loading UI...')
 			task.wait(1)
 			tweenservice:Create( LOADER.load.Salt, TweenInfo.new(0.65, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 146,0, 25)}):Play()
