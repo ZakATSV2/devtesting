@@ -1040,6 +1040,8 @@ do
                     TweenWorkLabel(3,'rbxassetid://136002400178503', '[ERROR:STAGE 0]: You are blacklisted...')
                     wait(1)
 					game.Players.LocalPlayer:Kick("Oops, Sorry! You're on the Script BlackList, this is due that you mess with our Auth or did something wrong, if you want to appeal, reach dev.senkauri or dev.realviper")
+					TweenWorkLabel(2,'rbxassetid://136405833725573', '[ERROR:STAGE 0]: Closing Game')
+					game:Shutdown();
 				end
 			end
 			TweenWorkLabel(1,'rbxassetid://136405833725573', '[STAGE 4]: Loading UI...')
